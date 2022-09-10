@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class attendance_medical {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of classes held :");
+        double held = sc.nextInt();
+        System.out.print("Enter the attended classes :");
+        double attend = sc.nextInt();
+        double attendance_percentage = (attend / held) * 100;
+        System.out.print("Are you apply for medical certificate write Yes or No :");
+        sc.nextLine();
+        String str = sc.next();
+        String abc = "Yes";
+        if (attendance_percentage >= 75) {
+            System.out.print("You are allowed to sit in exam.");
+        }
+        else if (str.equals(abc)) {
+            System.out.print("You are allowed to sit in exam.");
+        }
+        else {
+            System.out.print("You are not allowed to sit in exam.");
+        }
+    }
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class work_employee {
+    public static void main(String[] args){
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter the age :");
+       int age=sc.nextInt();
+       System.out.print("Enter the sex :");
+       sc.nextLine();
+       String str=sc.next();
+       String h="Female";
+       String g="Male";
+       System.out.print("Enter the martial status :");
+       sc.nextLine();
+       String abc=sc.next();
+       if(str.equals(h)){
+           System.out.print("Work only in urban areas.");
+       }
+       else if(str.equals(g) && (age>=20 && age<40)){
+           System.out.print("Work in anywhere.");
+       }
+       else if(str.equals(g) && (age>=40 && age<60)){
+           System.out.print("Work in urban areas.");
+       }
+       else{
+           System.out.print("ERROR");
+       }
+    }
+}

@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class age_old_young {
+     public static void main(String[] args){
+          Scanner sc = new Scanner(System.in);
+          System.out.print("Enter the age of man1 :");
+          int man1=sc.nextInt();
+          System.out.print("Enter the age of man2 :");
+          int man2=sc.nextInt();
+          System.out.print("Enter the age of man3 :");
+          int man3=sc.nextInt();
+          if(man1>man2 && man1>man3) {
+               System.out.println("Man1 is oldest");
+          }
+          else if(man2>man1 && man2>man3){
+               System.out.println("Man2 is oldest.");
+          }
+          else{
+               System.out.println("Man3 is oldest.");
+          }
+          if(man1<man2 && man1<man3){
+               System.out.println("Man1 is youngest.");
+          }
+          else if(man2<man3 && man2<man1){
+               System.out.println("Man2 is youngest.");
+          }
+          else{
+               System.out.println("Man3 is youngest.");
+          }
+
+
+     }
+}

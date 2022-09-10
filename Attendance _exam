@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class student_attendance {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of classes held :");
+        double held = sc.nextInt();
+        System.out.print("Enter the attended classes :");
+        double attend = sc.nextInt();
+        double attendance_percentage = (attend / held) * 100;
+        if (attendance_percentage >= 75) {
+            System.out.print("You are allowed to sit in exam.");
+        }
+        else {
+                System.out.print("You are not allowed to sit in exam.");
+            }
+        }
